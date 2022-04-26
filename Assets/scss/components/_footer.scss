@@ -1,0 +1,146 @@
+.footer {
+   
+    background-color: $black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+
+@include max-screen(md){
+flex-direction: column;
+}
+
+    &-left {
+        padding: 20px;
+        color: $white;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        @include max-screen(md){
+            flex-direction: column;
+            }
+
+        &-top {
+            color: $white;
+            display: flex;
+            justify-content: space-between;
+            @include max-screen(md){
+                flex-direction: column;
+               
+                }
+            &-left {
+                color: $white;
+                width: 30%;
+                @include max-screen(md){
+                  width: 161%;
+                    }
+
+                &-cont {
+                    color: $white;
+                    padding-top: 42px;
+                    font-size: 19px;
+                }
+            }
+
+            &-right {
+                color: $white;
+                display: flex;
+                justify-content: space-between;
+                width: 55%;
+                @include max-screen(md){
+                    
+                    width: 162%;
+                    }
+
+                &-data {
+                    color: $white;
+
+                    &-text {
+                        padding: 10px;
+                        color: $white;
+                        font-size: 19px;
+                    }
+                }
+            }
+        }
+
+        &-bottom {
+            color: $white;
+            display: flex;
+            justify-content: space-between;
+            @include max-screen(md){
+                flex-direction: column;
+                }
+            &-icon {
+                @include max-screen(md){
+                   padding-top: 20px;
+                    }
+                .fab {
+                    margin-right: 15px;
+                    font-size: 24px;
+                }
+
+                
+            }
+
+            &-text {
+                display: flex;
+                color: $white;
+                font-size: 19px;
+                @include max-screen(md){
+                  display: none;
+                    }
+
+                &-data {
+                    color: $white;
+                }
+            }
+
+        }
+
+
+    }
+
+
+
+
+
+    &-right {
+        padding: 20px;
+        background-color: #151515;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30%;
+        color: $white;
+        padding: 10px;
+        @include max-screen(md){
+           display: none;
+            }
+        &-text {
+            color: $white;
+            margin-bottom: 16px;
+            font-size: 19px;
+        }
+
+        &-btn {
+            color: $white;
+
+            background-color: $darkred;
+            width: 152px;
+            display: flex;
+            justify-content: center;
+            padding: 9px;
+            margin-bottom: 16px;
+
+        }
+
+        &-data {
+            color: $white;
+            font-size: 19px;
+            padding-bottom: 10px;
+        }
+    }
+}

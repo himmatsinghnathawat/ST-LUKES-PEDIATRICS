@@ -1,0 +1,95 @@
+.banner-img {
+    clip-path: ellipse(168% 73% at 47% 10%);
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 500px;
+    width: 100% ;
+    background-image: url('../../images/new-Hero-1.png');
+    display: flex;
+    padding-left: 50px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: center;
+    
+    &-years {
+        font-family: $bodoni;
+        font-size: 60px;
+        text-decoration: none;
+        color: $black;
+        font-weight: bold;
+        line-height: 2px;
+
+        @include max-screen(sm){
+            font-size: 20px;
+            
+        }
+        @include max-screen(md){
+            font-size: 40px;
+           
+        }
+    }
+
+    &-younger {
+        color: $darkred;
+        font-family: $bodoni;
+        font-size: 55px;
+        text-decoration: none;
+        font-weight: bold;
+
+
+        @include max-screen(sm){
+            font-size: 20px;
+           
+        }
+        @include max-screen(md){
+            font-size: 40px;
+           
+        }
+    
+    }
+
+    &-request {
+        border: 2px solid $darkred;
+
+
+        &-pTag {
+            padding: 15px;
+            font-family: $openSans;
+            color: white;
+
+
+            @include max-screen(sm){
+             padding: 8px;
+               
+            }
+            @include max-screen(md){
+                padding: 10px;
+            }
+        
+            &:hover{
+                background-color: $darkred;
+            }
+        }
+    
+    
+
+//         @include max-screen(md){
+//         top: 40px;
+//         }
+//         @include max-screen(sm){
+//             top:20px;
+//         }
+// @include max-screen(lg){
+//     justify-content: center;
+// }
+// @include min-screen(tt){
+// justify-content: center;
+
+
+
+
+    }
+}

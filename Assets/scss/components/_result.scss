@@ -1,0 +1,62 @@
+.result {
+    display: flex;
+    flex-wrap: wrap;
+    // padding-right: 200px;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 40px;
+
+   
+
+    &__box {
+        width: 40%;
+        @include max-screen(md) {
+            width:100%;
+        }
+        @include max-screen(sm){
+            width: 100%;
+        }
+
+        &-card {
+            position: relative;
+            display: flex;
+
+            &-img {
+                clip-path: circle(29%);
+            }
+
+            &-img1 {
+                position: absolute;
+                clip-path: circle(40%);
+                margin-left: -79px;
+                // @include max-screen(md) {
+                //     left: 44%;
+                // }
+                // @include max-screen(sm){
+                // left: 66%;
+                // }
+                
+                @include breakpoint-between(xs,sm){
+                    margin-left: -56px;
+                }
+                @include breakpoint-between(sm, md){
+                   margin-left: -65px
+                }
+            }
+        }
+
+        &-heading {
+            display: flex;
+            justify-content: center;
+            color: $black;
+            @include breakpoint-between(xs,sm){
+              font-size: 12px;
+         
+            }
+
+        }
+    }
+
+}
+

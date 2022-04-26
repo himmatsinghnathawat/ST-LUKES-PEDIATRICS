@@ -1,0 +1,90 @@
+// .banner-img {
+//     clip-path: ellipse(168% 73% at 47% 10%);
+//     position: relative;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center center;
+//     min-height: 330px;
+//     width: 100% ;
+
+//     &-cont {
+//         padding: 50px;
+//         top: 175px;
+//         position: absolute;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+
+//         @include max-screen(md){
+//         top: 40px;
+//         }
+//         @include max-screen(sm){
+//             top:20px;
+//         }
+
+//         &-years {
+//             font-family: $bodoni;
+//             font-size: 60px;
+//             text-decoration: none;
+//             color: $black;
+//             font-weight: bold;
+//             line-height: 36PX;
+
+//             @include max-screen(sm){
+//                 font-size: 20px;
+//                 line-height: 10PX;
+//             }
+//             @include max-screen(md){
+//                 font-size: 40px;
+//                 line-height: 15PX;
+//             }
+//         }
+
+//         &-younger {
+//             color: $darkred;
+//             font-family: $bodoni;
+//             font-size: 55px;
+//             text-decoration: none;
+//             font-weight: bold;
+
+
+//             @include max-screen(sm){
+//                 font-size: 20px;
+               
+//             }
+//             @include max-screen(md){
+//                 font-size: 40px;
+               
+//             }
+        
+//         }
+
+//         &-request {
+//             border: 1px solid $black;
+
+//             &-pTag {
+//                 font-size: 18px;
+//                 padding: 15px;
+//                 font-family: $openSans;
+//                 color: white;
+
+
+//                 @include max-screen(sm){
+//                  padding: 8px;
+//                  font-size: 10px;
+                   
+//                 }
+//                 @include max-screen(md){
+//                     padding: 10px;
+//                     font-size: 15px;
+//                 }
+            
+//                 &:hover{
+//                     background-color: $darkred;
+//                 }
+//             }
+//         }
+
+
+//     }
+// }

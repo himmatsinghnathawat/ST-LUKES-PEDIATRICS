@@ -1,0 +1,202 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid $grey;
+
+    &__left {
+        display: flex;
+        align-content: space-around;
+        // width: 30%;
+
+        &-logo {
+            width: 180px;
+            padding-left: 20px;
+
+            @include max-screen(md) {
+                width: 280px;
+            }
+
+            .filter {
+                filter: invert(1);
+
+                @include max-screen(md) {
+                    width: 165px;
+                }
+            }
+        }
+
+        &-icon {
+            background-color: $darkred;
+            display: flex;
+            flex-direction: column;
+            align-content: space-around;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            color: $white;
+            font-size: 20px;
+
+            &text {
+                font-size: 15px;
+                text-decoration: none;
+                color: $white;
+            }
+
+
+
+        }
+
+        .fas {
+            font-size: 28px;
+        }
+
+    }
+
+    &__right {
+        display: flex;
+
+        color: $white;
+        width: 30%;
+        align-content: space-around;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        @include max-screen(md) {
+            display: none;
+        }
+
+        &-text {
+            color: $black;
+            text-decoration: none;
+
+            .fas {
+                color: darkred;
+                padding-right: 5px;
+            }
+        }
+
+    }
+}
+
+.plasticReconst {
+    width: 100%;
+    border-bottom: 1px solid $grey;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+
+    &-text {
+        color: $darkred;
+        margin-left: 76px;
+    }
+}
+
+.bottomDiv {
+    background-color: $darkWhite;
+    color: $black;
+    border-bottom: 2px solid $grey;
+    padding-top: 12px;
+
+
+
+    .navbar {
+
+        color: $black;
+        text-decoration: none;
+        padding-left: 58px;
+        display: inline-block;
+        padding: 15px;
+        margin-left: 52px;
+
+
+        &-hiddDiv {
+            border: 20px solid $darkred;
+
+            &-data {
+                color: $darkred;
+
+            }
+        }
+
+        @include max-screen(md) {
+            display: none;
+        }
+
+    }
+
+    .hiddDiv1 {
+        position: absolute;
+        z-index: 5;
+        top: 213px;
+        width: 50%;
+        left: 56px;
+display: none;
+
+        background-color: $whiteT;
+
+        @include max-screen(md) {
+            display: none;
+        }
+
+        &-aa {
+
+
+            padding: 7px;
+            width: 100%;
+            display: flex;
+
+           
+        }
+    }
+
+    .hiddDiv2 {
+        position: absolute;
+        z-index: 5;
+        top: 213px;
+        width: 10%;
+        left: 189px;
+        display: none;
+
+        background-color: $whiteT;
+
+        @include max-screen(md) {
+            display: none;
+        }
+
+        &-aa2 {
+
+
+            padding: 7px;
+            width: 100%;
+            display: flex;
+
+            
+        }
+    }
+
+    .hiddDiv3 {
+        position: absolute;
+        z-index: 5;
+        top: 213px;
+        width: 10%;
+        left: 355px;
+        display: none;
+        background-color: $whiteT;
+
+        @include max-screen(md) {
+            display: none;
+        }
+
+        &-aa3 {
+
+
+            padding: 7px;
+            width: 100%;
+            display: flex;
+
+          
+        }
+    }
+
+}

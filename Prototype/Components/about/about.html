@@ -1,0 +1,49 @@
+<div class="about">
+    <h2 class="about__heading">About</h2>
+    <p class="about-para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, harum enim? Eius illum accusamus
+        voluptatum autem, earum fuga nobis minima labore fugit rem nemo nostrum, ea ad laudantium, harum alias. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Autem rerum ratione omnis neque adipisci id rem at, explicabo
+        aliquam ullam voluptatum mollitia consequuntur quas quam maiores ipsa accusantium consectetur? Temporibus?
+    </p>
+    <p class="about-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur modi, repudiandae quasi quidem nulla illo
+        hic, perspiciatis velit harum minus odit dolorum, sit nobis porro rerum sapiente accusamus ab nesciunt? Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Nostrum tempora, odit obcaecati quibusdam assumenda libero
+        quod debitis? Assumenda aspernatur deserunt accusantium perspiciatis! Veniam qui distinctio non enim dolor id
+        nisi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil fugiat atque quos, quas at error?
+        Voluptatem, saepe velit fuga qui aspernatur placeat dolorum unde, vel quisquam amet earum iure optio? Lorem
+        ipsum dolor sit amet consectetur, adipisicing elit. Illo expedita inventore quod praesentium consequatur nostrum
+        laborum dolor, repudiandae facilis non quaerat quas possimus quo esse a, doloremque dolore. Temporibus, ullam?
+    </p>
+    <p class="about-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel animi non omnis possimus quam, vitae necessitatibus
+        et corporis pariatur ad repellendus delectus, voluptas est velit, asperiores atque voluptatem sed hic. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, esse architecto cum odio non soluta vitae hic et
+        vel reiciendis nobis rerum. Sapiente porro animi reiciendis accusantium cupiditate labore incidunt.</p>
+</div>
+
+<div class="box">
+    <div class="box-left" id="box-left">
+        <i class="fas fa-play-circle  play_icon" id="playBtnIconAbout" onclick="playVideo()">   </i>
+      
+       
+    </div>
+    <iframe src="https://www.youtube-nocookie.com/embed/mg67iIFivDo?playlist=mg67iIFivDo&listType=playlist&autoplay=1&controls=0&loop=1&mute=1&cc_load_policy=0&iv_load_policy=3&disablekb=1&fs=0&modestbranding=1&playsinline=1&rel=0&hd=1&vq=hd1080"  id="iframe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy"  allowallscreen></iframe>
+   
+    <div class="box-right">
+<p class="box-right-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis delectus minus voluptatem non inventore quo quos impeditLorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis delectus minus voluptatem non inventore quo quos impedit quisquam dolorum voluptas. Expedita modi molestias suscipit numquam repellat illum aspernatur id assumenda!</p>
+    </div>
+</div>
+
+<script>
+    
+function playVideo(){
+    var playicon = document.getElementById("playBtnIconAbout");
+    playicon.addEventListener("click", function () {
+        document.getElementById("box-left").style.display = "none";
+        document.getElementById('iframe').style.display = "block";
+        var iframe = document.getElementById('iframe');
+        iframe.src += "?autoplay=1&playsinline=1";
+    });
+    console.log("Play video function");
+    
+}
+</script>

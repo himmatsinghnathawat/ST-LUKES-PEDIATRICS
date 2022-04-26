@@ -1,0 +1,60 @@
+.lower {
+    max-width: 80%;
+    margin: auto;
+
+    &__heading {
+        color: $red;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    &__body {
+        gap: 50px;
+        display: flex;
+        width: 100%;
+        margin-bottom: 70px;
+
+        &-text {
+            width: 60%;
+
+            &-para {
+                font-size: 13px;
+                padding-bottom: 15px;
+            }
+        }
+
+        &-img {
+
+            width: 30%;
+
+            &-pic {
+                width: 86%;
+                border-bottom-left-radius: 50px;
+                border-top-right-radius: 50px;
+            }
+
+            &-seemore {
+                padding: 4px;
+                border: 2px solid $red;
+                margin-top: 18px;
+                font-size: 19px;
+                width: 310px;
+            }
+
+            &-request {
+                margin-top: 15px;
+                background: $red;
+                padding: 11px;
+                font-size: 18px;
+                color: $white;
+                width: 69%;
+            }
+        }
+    }
+
+    &__card {
+        display: flex;
+        gap: 40px;
+        margin-bottom: 30px;
+    }
+}

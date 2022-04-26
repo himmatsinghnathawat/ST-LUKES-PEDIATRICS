@@ -1,0 +1,45 @@
+/*=============  Vendor style   ================================*/
+@import "./vendor/bootstrap";
+@import "./vendor/fontawesome";
+
+
+
+/*=================  base scss  ================================*/
+@import "./base/fonts";
+@import "./base/var";
+@import "./base/mixin";
+@import "./base/base";
+@import "./base/theme";
+
+
+
+
+
+
+/*============= Component style ================================*/
+
+@import "./components/header";
+@import "./components/card";
+@import "./components/look";
+@import "./components/good-hands";
+@import "./components/meet-Our-team";
+@import "./components/popularServices";
+@import "./components/ourPatients";
+@import "./components/footer";
+@import "./components/about";
+@import "./components/education";
+@import "./components/location";
+@import "./components/st-luke";
+@import "./components/about-location";
+@import "./components/services";
+@import "./components/surgical-service";
+@import"./components/cosmetic";
+@import"./components/before-after";
+@import"./components/result";
+@import"./components/contact";
+@import"./components/form";
+@import"./components/lower-body";
+@import"./components/offer";
+@import"./components/thank";
+
+

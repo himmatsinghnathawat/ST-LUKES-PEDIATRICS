@@ -1,0 +1,107 @@
+.about-location {
+    max-width: 90%;
+    margin: auto;
+
+    &-heading {
+        color: $red;
+        font-size: 29px;
+        padding: 15px;
+    }
+
+    &-text {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    &-contact {
+        margin-top: 90px;
+        margin-bottom: 90px;
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        &-img {
+            width: 35%;
+            @include max-screen(md) {
+                width: 100%;
+                padding-bottom: 20px;
+            }
+
+            &-photo {
+                border-top-right-radius: 35px;
+                border-bottom-left-radius: 35px;
+                min-height: 280px;
+            }
+        }
+
+
+
+        &-data {
+            width: 35%;
+            @include max-screen(md) {
+                width: 100%;
+            }
+
+            &-heading {
+                color: $red;
+                font-size: 24px;
+                padding-bottom: 11px;
+            }
+
+            &-box {
+
+                display: flex;
+                justify-content: space-evenly;
+
+                &-address {
+
+                    &-heading {
+                        font-size: 17px;
+                        font-weight: bold;
+                        padding: 10px;
+                        padding-bottom: 35px;
+                    }
+
+                    &-text {
+                        font-size: 14px;
+                        padding: 10px;
+                    }
+
+                    &-number {
+
+                        color: $red;
+                        font-weight: bold;
+                        font-size: 19px;
+                        padding: 12px;
+                    }
+
+                    &-btnn {
+                        margin-top: 35px;
+                        background-color: $red;
+                        padding: 10px;
+                        color: $white;
+                        font-size: 12px;
+                        display: flex;
+                    justify-content: center;
+                    }
+                }
+
+                &-office {
+
+                    &-heading {
+                        font-size: 17px;
+                        font-weight: bold;
+                        padding: 10px;
+                        padding-bottom: 35px;
+                    }
+                    &-time {
+                        font-size: 14px;
+                        padding: 10px;
+                    }
+                    
+                }
+            }
+        }
+    }
+}

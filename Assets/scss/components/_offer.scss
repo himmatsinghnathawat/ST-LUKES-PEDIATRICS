@@ -1,0 +1,82 @@
+.offer {
+    max-width: 80%;
+    margin: auto;
+    &__heading {
+        font-size: 30px;
+        color: $red;
+        padding-bottom: 20px;
+        font-family:$bodoni;
+    }
+
+    &__content {
+        width: 100%;
+        display: flex;
+        margin-bottom: 40px;
+        gap: 30px;
+        &-para {
+            width: 60%;
+
+            &-text {
+              
+                font-size: 18px;
+                padding-bottom: 20px;
+            }
+            &-box {
+                &-head {
+                    font-size: 29px;
+                    font-family: $bodoni;
+                }
+                &-plusBtn {
+                    display: block;
+                }
+                &-minusBtn {
+                    display: none;
+                }
+                &-data {
+                    width: 50%;
+                    display: none;
+                    &-text {
+                        position: relative;
+                        font-size: 11px;
+                        border-left: 2px solid black;
+                        top: -21px;
+                        width: 144%;
+                        padding-left: 10px;
+                        margin-left: 20px;
+                        left: -13px;
+                    }
+                }
+            }
+        }
+
+        &-img {
+            width: 30%;
+
+            &-a {
+                border-bottom-left-radius: 20px;
+                border-top-right-radius: 20px;
+                margin-bottom: 20px;
+            }
+
+            &-see {
+                border: 2px solid $darkred;
+                padding: 10px;
+                font-size: 15px;
+                margin-bottom: 20px;
+                width: 207px;
+            }
+
+            &-request {
+                color: $white;
+                background-color: $darkred;
+                padding: 10px;
+                font-size: 15px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+}
+.fa-plus-circle{
+    color:$grey;
+}

@@ -1,0 +1,121 @@
+.main-team {
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &-top {
+        margin-bottom: 200px;
+
+        &-heading {
+            color: $red;
+            font-size: 25px;
+            padding-bottom: 20px;
+        }
+
+        &-text {
+            font-size: 20px;
+        }
+    }
+
+    &-bottom {
+        // margin-bottom: 200px;
+        width: 80%;
+        gap: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        @include max-screen(md){
+            gap: 80px;
+        }
+        @include max-screen(sm){
+
+        }
+
+        &-data {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            background-color: $white-light;
+            min-height: 250px;
+            padding-top: 50px;
+            width: 20%;
+            margin-bottom: 100px;
+            min-width: 210px;
+            max-width: 300px;
+
+
+            @include max-screen(md){
+                width: 100%;
+                min-height: 250px;
+            }
+            @include max-screen(sm){
+              width: 100%;
+              
+            }
+
+            &-img {
+                clip-path: circle(44%);
+                display: flex;
+                z-index: 2;
+                position: absolute;
+                top: -55%;
+                width: 100%;
+
+                @include max-screen(md){
+                    width: 100%;
+                  
+                  
+                }
+                @include max-screen(sm){
+        
+                }
+
+            }
+
+
+
+            &-heading {
+                padding-top: 50px;
+                display: flex;
+                justify-content: center;
+                @include max-screen(md){
+                    padding-top: 100px;
+                }
+                @include max-screen(sm){
+                    padding-top: 55px;
+                }
+            }
+
+            &-para {
+                display: flex;
+                justify-content: center;
+                font-size: 15px;
+                padding-bottom: 10px;
+                @include max-screen(md){
+
+                }
+                @include max-screen(sm){
+        
+                }
+
+            }
+
+            &-bttn {
+                display: flex;
+                justify-content: center;
+                color: $white;
+                background: $darkred;
+                padding: 13px;
+                font-size: 14px;
+                @include max-screen(md){
+
+                }
+                @include max-screen(sm){
+        
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,322 @@
+.location {
+    background-color: #f1efef;
+
+    &-content {
+        max-width: 80%;
+        margin: auto;
+
+        &-heading {
+            color: $red;
+            font-size: 30px;
+            padding: 30px;
+        }
+
+        &-card {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            gap: 133px;
+            padding-top: 65px;
+            padding-bottom: 50px;
+            @include max-screen(md){
+             
+               display: flex;
+               flex-direction: column;
+                 }
+
+            &-allentown {
+                background-color: $white;
+                width: 25%;
+                padding: 10px;
+                @include max-screen(md){
+                    width: 100%;
+                }
+
+                &-heading {
+                    font-size: 17px;
+                }
+
+                &-text {
+                    font-size: 14px;
+                    padding: 5px;
+                }
+
+                &-number {
+                    color: $red;
+                    font-size: 15px;
+                    padding-top: 15px;
+                    font-weight: bold;
+                    padding-bottom: 10px;
+                }
+
+                &-office {
+                    padding: 10px;
+                    background-color: #f7f7f7;
+
+                    &-hours {
+                        color: $red;
+                        font-size: 16px;
+                    }
+
+                    &-time {
+                        font-size: 14px;
+                    }
+                }
+
+            }
+
+            &-bethlehem {
+                width: 25%;
+                background-color: $white;
+                @include max-screen(md){
+                    width: 100%;
+                }
+                padding: 10px;
+
+                &-heading {
+                    font-size: 17px;
+                }
+
+                &-text {
+                    font-size: 14px;
+                    padding: 5px;
+                }
+
+                &-number {
+                    color: $red;
+                    font-size: 15px;
+                    padding-top: 15px;
+                    font-weight: bold;
+                    padding-bottom: 10px;
+                }
+
+                &-office {
+                    padding: 10px;
+                    background-color: #f7f7f7;
+
+                    &-hours {
+                        color: $red;
+                        font-size: 16px;
+                    }
+
+                    &-time {
+                        font-size: 14px;
+                    }
+                }
+
+
+            }
+
+            &-valley {
+                width: 25%;
+                background-color: $white;
+                padding: 10px;
+
+                @include max-screen(md){
+                    width: 100%;
+                }
+
+                &-heading {
+                    font-size: 17px;
+                }
+
+                &-text {
+                    font-size: 14px;
+                    padding: 5px;
+                }
+
+                &-number {
+                    color: $red;
+                    font-size: 15px;
+                    padding-top: 15px;
+                    font-weight: bold;
+                    padding-bottom: 10px;
+                }
+
+                &-office {
+                    padding: 10px;
+                    background-color: #f7f7f7;
+
+                    &-hours {
+                        color: $red;
+                        font-size: 16px;
+                    }
+
+                    &-time {
+                        font-size: 14px;
+                    }
+                }
+
+
+
+            }
+
+            &-easton {
+                background-color: $white;
+                width: 25%;
+                padding: 10px;
+
+                @include max-screen(md){
+                    width: 100%;
+                }
+                &-heading {
+                    font-size: 17px;
+                }
+
+                &-text {
+                    font-size: 14px;
+                    padding: 5px;
+                }
+
+                &-number {
+                    color: $red;
+                    font-size: 15px;
+                    padding-top: 15px;
+                    font-weight: bold;
+                    padding-bottom: 10px;
+                }
+
+                &-office {
+                    padding: 10px;
+                    background-color: #f7f7f7;
+
+                    &-hours {
+                        color: $red;
+                        font-size: 16px;
+                    }
+
+                    &-time {
+                        font-size: 14px;
+                    }
+                }
+
+
+
+            }
+
+            &-palmerton {
+                background-color: $white;
+                width: 25%;
+                padding: 10px;
+
+                @include max-screen(md){
+                    width: 100%;
+                }
+                &-heading {
+                    font-size: 17px;
+                }
+
+                &-text {
+                    font-size: 14px;
+                    padding: 5px;
+                }
+
+                &-number {
+                    color: $red;
+                    font-size: 15px;
+                    padding-top: 15px;
+                    font-weight: bold;
+                    padding-bottom: 10px;
+                }
+
+                &-office {
+                    padding: 10px;
+                    background-color: #f7f7f7;
+
+                    &-hours {
+                        color: $red;
+                        font-size: 16px;
+                    }
+
+                    &-time {
+                        font-size: 14px;
+                    }
+                }
+
+
+            }
+
+            &-strouds {
+                background-color: $white;
+                width: 25%;
+                padding: 10px;
+                @include max-screen(md){
+                    width: 100%;
+                }
+
+                &-heading {
+                    font-size: 17px;
+                }
+
+                &-text {
+                    font-size: 14px;
+                    padding: 5px;
+                }
+
+                &-number {
+                    color: $red;
+                    font-size: 15px;
+                    padding-top: 15px;
+                    font-weight: bold;
+                    padding-bottom: 10px;
+                }
+
+                &-office {
+                    padding: 10px;
+                    background-color: #f7f7f7;
+
+                    &-hours {
+                        color: $red;
+                        font-size: 16px;
+                    }
+
+                    &-time {
+                        font-size: 14px;
+                    }
+                }
+
+            }
+
+            &-quakertown {
+                background-color: $white;
+                width: 25%;
+                padding: 10px;
+                @include max-screen(md){
+                    width: 100%;
+                }
+
+                &-heading {
+                    font-size: 17px;
+                }
+
+                &-text {
+                    font-size: 14px;
+                    padding: 5px;
+                }
+
+                &-number {
+                    color: $red;
+                    font-size: 15px;
+                    padding-top: 15px;
+                    font-weight: bold;
+                    padding-bottom: 10px;
+                }
+
+                &-office {
+                    padding: 10px;
+                    background-color: #f7f7f7;
+
+                    &-hours {
+                        color: $red;
+                        font-size: 16px;
+                    }
+
+                    &-time {
+                        font-size: 14px;
+                    }
+                }
+                
+            }
+        }
+    }
+}

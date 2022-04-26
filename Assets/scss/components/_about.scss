@@ -1,0 +1,58 @@
+.about {
+    max-width: 90%;
+    margin: auto;
+    &__heading {
+        font-size: 28px;
+        color: $red;
+        padding-bottom: 15px;
+    }
+    &-para {
+        font-size: 16px;
+        padding-bottom: 30px;
+    }
+}
+.box {
+    margin-top: 50px;
+    clip-path: ellipse(127% 100% at 50% 100%);
+    background-color: $red;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    @include max-screen(md) {
+        display: flex;
+        flex-direction: column;
+        padding: 67px;
+    }
+    &-left {
+        background-image: url('https://source.unsplash.com/random/112x112gffdfh');
+        width: 30%;
+        color: $white;
+        align-content: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 59px;
+@include max-screen(md){
+    padding-top:15px ;
+    width: 100%;
+    min-height: 120px;
+    padding: 25px;
+}
+    }
+    iframe {
+        width: 30%;
+        display: none;
+    }
+    &-right {
+        width: 30%;
+        &-text {
+            color: $white;
+        }
+        @include max-screen(md){
+            width: 100%;
+            padding: 25px;
+        }
+    }
+}
